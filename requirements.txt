@@ -1,0 +1,27 @@
+# Async HTTP client — RSS polling, Telegram delivery, transcript site scraping
+aiohttp>=3.9,<4.0
+
+# Async SQLite
+aiosqlite>=0.20,<1.0
+
+# Config from .env
+pydantic>=2.0,<3.0
+pydantic-settings>=2.0,<3.0
+python-dotenv>=1.0,<2.0
+
+# RSS feed parsing
+feedparser>=6.0,<7.0
+
+# Audio download (stream URL extraction)
+yt-dlp>=2024.1.0
+
+# Local Whisper transcription — no API cost, runs on CPU
+faster-whisper>=1.0,<2.0
+
+# HTML parsing for transcript site scraping
+beautifulsoup4>=4.12,<5.0
+lxml>=5.0,<6.0
+
+# NOTE: ffmpeg is NOT a Python package — install it separately:
+# Windows: https://ffmpeg.org/download.html → add ffmpeg.exe to PATH
+#          OR place ffmpeg.exe in the project directory and set FFMPEG_PATH=ffmpeg.exe in .env
