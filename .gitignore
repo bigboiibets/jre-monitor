@@ -1,0 +1,7 @@
+.env
+*.db
+audio_tmp/
+__pycache__/
+*.pyc
+venv/
+ffmpeg.exe
